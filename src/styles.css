@@ -1,0 +1,233 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: arial, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+
+h1,
+h2 {
+    color: #c3e615;
+}
+
+
+h3,
+p,
+li,
+a,
+button {
+    color: #a6a6a6;
+}
+
+h3 {
+    margin-right: 15px;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    margin: 0 auto 32px;
+    padding: 0 16px;
+    max-width: 960px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-form {
+    min-width: 280px;
+    max-width: 500px;
+    width: auto;
+}
+
+section,
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 16px 0 0 0;
+}
+
+section>h3 {
+    margin: 0 20px 0 0;
+    padding-bottom: 1.34375em;
+    align-self: center;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: #ffffff;
+}
+
+.search-form-field {
+    width: 100%;
+}
+
+.mat-form-field-label,
+.mat-form-field.mat-focused .mat-form-field-label {
+    color: #000000;
+}
+
+.mat-form-field-ripple {
+    background-color: rgb(222, 227, 73);
+}
+
+.mat-form-field.mat-focused .mat-form-field-ripple {
+    background-color: rgb(221, 246, 97);
+}
+
+.details-section {
+    min-width: 697px;
+    background-color: #18dae117;
+    margin: 20px 0 20px 0;
+    padding: 0 0 14px 20px;
+    border-radius: 6px;
+}
+
+.details-section h3,
+.details-section p,
+.details-section li {
+    margin: 14px 0;
+}
+
+.details-section h3 {
+    font-size: 25px;
+    color: green;
+    margin: 14px 0 20px 0;
+    font-weight: bold;
+}
+
+.details-section.all>div {
+    width: 100%;
+}
+
+.details-section.all li {
+    display: inline-block;
+    padding: 0 30px 0 0;
+}
+
+.details-section.all p {
+    color: #f97c7c;
+}
+
+.view-all-container {
+    margin: 0;
+    text-align: right;
+}
+
+.view-all {
+    cursor: pointer;
+    color: #008000;
+    font-size: 15px;
+}
+
+.view-all:hover {
+    text-decoration: underline;
+   
+}
+
+.view-all span {
+    padding-left: 5px;
+}
+
+.view-detais {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.details-section.all ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.details-section.all .view-detais {
+    text-decoration: none;
+    font-size: 17px;
+    color:#6e6666 ;
+}
+
+.details-section.all .view-detais:hover {
+    text-decoration: underline;
+    color: #008000;
+}
+
+.is-loading {
+    color: #ffffff;
+}
+
+button {
+    font-size: 14px;
+    /* background: transparent; */
+    border: none;
+    padding: 0;
+}
+
+/* mat-mdc-form overrides */
+.search-form .mat-mdc-text-field-wrapper {
+    height: 35px;
+}
+
+.mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-floating-label {
+    top: 18px;
+}
+
+
+.mat-mdc-text-field-wrapper:not(.mdc-text-field--outlined) .mat-mdc-form-field-infix {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+mat-label {
+    font-size: 14px;
+}
+
+.search-form .mdc-text-field--filled {
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.search-form .mdc-text-field__input {
+    padding-top: 10px;
+}
+
+.search-form .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-floating-label,
+.search-form .mdc-text-field--filled:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-floating-label--float-above {
+    color: #000000;
+}
+
+.cdk-overlay-container div.mat-mdc-autocomplete-panel {
+    background-color: #333333;
+    padding: 0;
+}
+
+.mat-mdc-option.mdc-list-item {
+    color: #a6a6a6;
+    min-height: 42px;
+}
+
+.mat-mdc-option.mdc-list-item:not(:last-child) {
+    border-bottom: 1px solid #da1212;
+}
+
+.mat-mdc-autocomplete-visible .mat-mdc-option.mdc-list-item--disabled .mdc-list-item__primary-text {
+    color: #a6a6a6;
+    opacity: 1;
+}
